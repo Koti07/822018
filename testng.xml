@@ -4,7 +4,7 @@
         <classes>
         
          <class name="com.opencart.newopencart.OrderHistory"/>    
-           <class name="com.opencart.newopencart.OrderHistory"/>   
+            
         </classes> 
     </test>    
 </suite>
