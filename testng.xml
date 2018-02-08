@@ -2,8 +2,9 @@
     <test name="Opencart">
     <parameter name="browser" value="chrome" />
         <classes>
+        
          <class name="com.opencart.newopencart.OrderHistory"/>    
-         
+           <class name="com.opencart.newopencart.OrderHistory"/>   
         </classes> 
     </test>    
 </suite>

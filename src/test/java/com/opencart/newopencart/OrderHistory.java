@@ -59,6 +59,8 @@ public class OrderHistory extends ExtentReportsClass {
 		getLogger().log(LogStatus.INFO, "Logout completed");
 		getLogger().log(LogStatus.PASS, "Checking order History Pass");
 		
+		extent.
+		
 
 		
 	}
