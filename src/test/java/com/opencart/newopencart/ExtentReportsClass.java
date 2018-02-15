@@ -67,7 +67,7 @@ public class ExtentReportsClass{
 		//You should call close() only once, at the very end (in @AfterSuite for example) as it closes the underlying stream. 
 		//Once this method is called, calling any Extent method will throw an error.
 		//close() - To close all the operation
-		getExtent().close();
+		//getExtent().close();
 	}
 
 

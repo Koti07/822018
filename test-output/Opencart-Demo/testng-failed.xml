@@ -2,25 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Opencart-Demo]">
   <test name="Opencart(failed)">
-    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.opencart.newopencart.TC_2">
-        <methods>
-          <include name="Extentreport4"/>
-          <include name="Initialize"/>
-          <include name="Extentreport1"/>
-          <include name="Extentreport3"/>
-          <include name="Login"/>
-          <include name="Extentreport5"/>
-          <include name="Extentreport2"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.opencart.newopencart.TC_2 -->
-      <class name="com.opencart.newopencart.OrderHistory">
+      <class name="com.opencart.newopencart.ProductComparison">
         <methods>
           <include name="startReport"/>
-          <include name="getResult"/>
           <include name="Initialize"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.opencart.newopencart.ProductComparison -->
+      <class name="com.opencart.newopencart.OrderHistory">
+        <methods>
+          <include name="Orderhistory"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- com.opencart.newopencart.OrderHistory -->
     </classes>

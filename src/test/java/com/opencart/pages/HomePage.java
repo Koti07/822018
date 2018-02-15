@@ -56,6 +56,60 @@ public class HomePage {
 	@FindBy(linkText="shopping cart")
 	public  WebElement shopingcart;
 	
+	@FindBy(id="shipping_estimate")
+	public  WebElement estimateshipping;
+	
+
+	@FindBy(id="button-shipping-address")
+	public  WebElement shippingcontinue;
+	
+	@FindBy(id="button-shipping-method")
+	public  WebElement shippingmethod;
+	
+	@FindBy(name="shipping_method")
+	public  WebElement flatshippingmethod;
+	
+	
+	
+	@FindBy(name="country_id")
+	public  WebElement countrydpd;
+	
+	
+
+	
+	
+	@FindBy(name="zone_id")
+	public  WebElement zonedpd;
+	
+	@FindBy(name="postcode")
+	public  WebElement postcode;
+	
+	@FindBy(id="button-quote")
+	public  WebElement getquote;
+	
+	@FindBy(id="flat.flat")
+	public  WebElement flatshipping;
+	@FindBy(id="button-shipping")
+	public  WebElement applyshipping;
+	
+	@FindBy(id="use_coupon")
+	public  WebElement usecoupon;
+
+	@FindBy(name="coupon")
+	public  WebElement couponcode;
+	
+	
+	@FindBy(xpath="(//INPUT[@type='submit'])[1]")
+	public  WebElement applycoupon;
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@FindBy(xpath="(//INPUT[@type='text'])[2]")
 	public  WebElement updatequantity;
 	@FindBy(xpath="//INPUT[@type='image']")
@@ -65,6 +119,19 @@ public class HomePage {
 	
 	@FindBy(xpath="//OPTION[@value='4227'][text()='Koteswararo Majji, Wipro, HYD, Andhra Pradesh, India']")
 	public  WebElement selectaddress;
+	
+	//*[@id="shipping-existing"]/select/option[1]
+	
+	@FindBy(xpath="//*[@id='shipping-existing']/select/option[3]")
+	public  WebElement selectnewaddress;
+	//OPTION[@value='4869'][text()='NewKoti Majji, address1, Hyderabad, Andhra Pradesh, India'][text()='NewKoti Majji, address1, Hyderabad, Andhra Pradesh, India'])[2]
+	
+	@FindBy(id="payment-address-new")
+	public  WebElement newaddressbilling;
+	
+	@FindBy(id="shipping-address-new")
+	public  WebElement newaddressshipping;
+	
 	
 	
 	@FindBy(id="button-payment-address")
@@ -82,11 +149,14 @@ public class HomePage {
 	public  WebElement termscondi;
 
 
-	@FindBy(xpath="//input[@id='button-confirm']")
+	@FindBy(id="button-confirm")
 	public  WebElement confirmbtn;
 	
 	@FindBy(linkText="MacBook")
 	public  WebElement verifyproduct;
+	
+	@FindBy(linkText="Samsung Galaxy Tab 10.1")
+	public  WebElement verifyproductsamsung;
 	
 	@FindBy(linkText="My Account")
 	public  WebElement myaccounttab;
@@ -110,15 +180,81 @@ public class HomePage {
 	@FindBy(xpath="//*[@id='content']/form/div[3]/div[2]/input")
 	public  WebElement ordersubmitbtn;
 	
-	@FindBy(xpath="//A[@href='index.php?route=product/product&path=57&product_id=49']")
+	@FindBy(xpath="//*[@id='slideshow0']/a")
 	public  WebElement productbanner;
 	
+	@FindBy(xpath="//IMG[@id='image']")
+	public  WebElement productimg;
+	
+	@FindBy(id="cboxNext")
+	public  WebElement productimgnext;
+	@FindBy(id="cboxClose")
+	public  WebElement productimgclose;
 	
 	
+	@FindBy(name="firstname")
+	public  WebElement newfirstname;
+	
+
+	@FindBy(name="lastname")
+	public  WebElement newlastname;
+	
+
+	@FindBy(name="address_1")
+	public  WebElement newaddress1;
+	
+
+	@FindBy(name="city")
+	public  WebElement newcity;
+	
+
+	@FindBy(name="country_id")
+	public  WebElement newcountry;
+	
+
+	@FindBy(name="zone_id")
+	public  WebElement newzone;
+	
+	@FindBy(id="cboxClose")
+	public  WebElement closeterms;
+
+	@FindBy(linkText="Terms & Conditions")
+	public  WebElement terms;
+	
+	@FindBy(name="search")
+	public  WebElement search;
+	
+	@FindBy(xpath="//DIV[@class='button-search']")
+	public  WebElement searchbtn;
+	
+	@FindBy(linkText="Phones & PDAs")
+	public  WebElement phonespads;
+	
+	@FindBy(xpath="//*[@id='content']/div[4]/div[1]/div[1]/div[3]/a[1]")
+	public  WebElement addtocompare1;
 	
 	
+	@FindBy(xpath="//*[@id='content']/div[4]/div[2]/div[1]/div[3]/a[1]")
+	public  WebElement addtocompare2;
+	
+	@FindBy(xpath="//*[@id='content']/div[4]/div[3]/div[1]/div[3]/a[1]")
+	public  WebElement addtocompare3;
+
+	@FindBy(linkText="product comparison")
+	public  WebElement productcomparison;
+	
+	@FindBy(xpath="//*[@id='content']/table/tbody[1]/tr[1]/td[3]/a[1]")
+	public  WebElement firstphone;
+	
+	@FindBy(linkText="Newsletter")
+	public  WebElement newsletter;
 	
 	
+	@FindBy(xpath="(//INPUT[@type='radio'])[1]")
+	public  WebElement newsletterradio;
+	
+	@FindBy(xpath="//INPUT[@type='submit']")
+	public  WebElement newssubmit;
 	
 	
 	

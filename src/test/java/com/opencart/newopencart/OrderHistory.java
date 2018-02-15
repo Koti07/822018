@@ -18,7 +18,7 @@ public class OrderHistory extends ExtentReportsClass {
 	WebDriver driver;
 	Operations ooperations;
 	
-	
+	/*
 	@BeforeTest
 
 	public void Initialize(){
@@ -30,7 +30,7 @@ public class OrderHistory extends ExtentReportsClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://10.207.182.108:81/opencart");
-	}
+	}*/
 @Test
 	public void Orderhistory() throws InterruptedException{
 		setLogger(getExtent().startTest("Orderhistory"));
@@ -53,13 +53,13 @@ public class OrderHistory extends ExtentReportsClass {
 		
 		ooperations.checkout();
 		getLogger().log(LogStatus.INFO, "Checkout & Verifying order history completed");
-		ooperations.ordersubmition();
+		ooperations.returnordersubmition();
 		getLogger().log(LogStatus.INFO, "Order submition completed");
 		ooperations.logout();
 		getLogger().log(LogStatus.INFO, "Logout completed");
 		getLogger().log(LogStatus.PASS, "Checking order History Pass");
 		
-		extent.
+		
 		
 
 		

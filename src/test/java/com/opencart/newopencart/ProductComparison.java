@@ -3,27 +3,26 @@ package com.opencart.newopencart;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.opencart.pageoperations.Operations;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class AddingPhonestocart extends ExtentReportsClass {
-
+public class ProductComparison extends ExtentReportsClass {
+	
 	WebDriver driver;
 	Operations ooperations;
 	String url;
 
 
-	@BeforeTest
+	@BeforeSuite
 
 	public void Initialize(){
 
@@ -45,19 +44,9 @@ public class AddingPhonestocart extends ExtentReportsClass {
         }
 	}
 	
-	
-/*	public static Object[][] newaddress() {
-		 
-        // The number of times data is repeated, test will be executed the same no. of times
- 
-        // Here it will execute two times
- 
-        return new Object[][] { { "NewKoti", "Majji","Wipro","12334","address1","Hyderabad","500080","India","Andhra Pradesh" }};
- 
-  }*/
 	@Test()
-	public void addingPhonestocart() throws InterruptedException{
-		setLogger(getExtent().startTest("addingPhonestocart"));
+	public void productcomparison() throws InterruptedException{
+		setLogger(getExtent().startTest("productcomparison"));
 		//logger = extent.createTest("Login");
 		ooperations = new Operations(driver);
 
@@ -66,29 +55,26 @@ public class AddingPhonestocart extends ExtentReportsClass {
 		ooperations.login();
 		getLogger().log(LogStatus.INFO, "Login completed");
 		
-		ooperations.addtocartfromhome();
-		getLogger().log(LogStatus.INFO, "Add to cart completed");
+		ooperations.search();
+		getLogger().log(LogStatus.INFO, "comparing the products completed");
+		ooperations.addtocartfromcomp();
+		getLogger().log(LogStatus.INFO, "adding the product from comparison page is completed");
 		
-		ooperations.checkoutfromhome();
 		
-		getLogger().log(LogStatus.INFO, "checkout completed");
+		ooperations.checkoutfromcomp();
 		
-		//ooperations.ordersubmition();
+		getLogger().log(LogStatus.INFO, "Checkout is completed");
+		ooperations.subscribenewsletter();
+		getLogger().log(LogStatus.INFO, "subscribe to newsletter is completed");
 		ooperations.logout();
 		getLogger().log(LogStatus.INFO, "Logout completed");
-		getLogger().log(LogStatus.PASS, "adding phones form home is pass");
-		
-		
-
-
-
+		getLogger().log(LogStatus.PASS, "Product comparison test case is completed");
 	}
-	@AfterTest
+	
+	/*@AfterTest
 	public void closingbrowser(){
 		driver.close();
 
-	}
+	}*/
 
 }
-
-
