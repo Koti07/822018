@@ -6,14 +6,31 @@
       <class name="com.opencart.newopencart.ProductComparison">
         <methods>
           <include name="startReport"/>
+          <include name="productcomparison"/>
           <include name="Initialize"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.opencart.newopencart.ProductComparison -->
+      <class name="com.opencart.newopencart.RegistrationAddToCart">
+        <methods>
+          <include name="addToWishlist"/>
+          <include name="addReviewOnViewedProduct" invocation-numbers="0 1"/>
+          <include name="Initialize"/>
+          <include name="registration" invocation-numbers="0"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- com.opencart.newopencart.RegistrationAddToCart -->
+      <class name="com.opencart.newopencart.AddingPhonestocart">
+        <methods>
+          <include name="Initialize"/>
+          <include name="addingPhonestocart"/>
+        </methods>
+      </class> <!-- com.opencart.newopencart.AddingPhonestocart -->
       <class name="com.opencart.newopencart.OrderHistory">
         <methods>
           <include name="Orderhistory"/>
           <include name="getResult"/>
+          <include name="Initialize"/>
         </methods>
       </class> <!-- com.opencart.newopencart.OrderHistory -->
     </classes>

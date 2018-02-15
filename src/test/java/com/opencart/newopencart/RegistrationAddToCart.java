@@ -1,24 +1,29 @@
 package com.opencart.newopencart;
 
 import java.io.File;
+import java.net.URL;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.opencart.pages.AccountLogoutPage;
 import com.opencart.pages.GalaxyProductPage;
@@ -32,18 +37,19 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.opencart.utilities.*;
 import com.opencart.pageoperations.*;
 
-public class Registration_AddToCart extends ExtentReportsClass {
+public class RegistrationAddToCart extends ExtentReportsClass {
 	
-	WebDriver driver;
+	WebDriver driver = null;
 	RegistrationPage registrationPage;
 	HomePage homePage;
 	GalaxyProductPage galaxyProductPage;
 	MyWishlistPage myWishlistPage;
 	MultiBrowser multibrowser;
-	Operations loginpageope;;
+	Operations loginpageope;
+	String url;
 	
 	
-	@BeforeTest
+/*	@BeforeSuite
 
 	public void Initialize(){
 
@@ -54,7 +60,31 @@ public class Registration_AddToCart extends ExtentReportsClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://10.207.182.108:81/opencart");
 	}
+	*/
 	
+	
+		@BeforeSuite
+
+	public void Initialize(){
+
+		System.setProperty("webdriver.chrome.driver", "D:/Softwaresdump/chromedriver.exe");
+		driver = new ChromeDriver();
+		//	driver = new FirefoxDriver();
+		url = "http://localhost:4444/wd/hub";
+        try {
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setBrowserName("chrome");
+            capabilities.setPlatform(Platform.WINDOWS);
+            driver = new RemoteWebDriver(new URL (url), capabilities);
+           
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    		driver.manage().window().maximize();
+    		driver.get("http://10.207.182.108:81/opencart");
+        }catch(Exception e){
+            e.printStackTrace();
+		
+        }
+	}
 	//Test to create a new account for the user - [Used Apache POI to read details from Excel]
 	@Test(priority=1, dataProvider="User Details")
 	public void registration(String firstname,String lastname,String emailAddress,String telephoneNum,String address1,String cityName,String postcodeNum,String country,String zone,String pwd,String confirm_pwd) throws Exception{

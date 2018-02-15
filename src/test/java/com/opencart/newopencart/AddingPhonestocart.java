@@ -10,20 +10,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.opencart.pageoperations.Homepageoperations;
 import com.opencart.pageoperations.Operations;
 import com.relevantcodes.extentreports.LogStatus;
+import com.opencart.pages.*;
 
 public class AddingPhonestocart extends ExtentReportsClass {
-
-	WebDriver driver;
+	
+	WebDriver driver = null;
 	Operations ooperations;
+	
 	String url;
 
 
-	@BeforeTest
+	@BeforeClass
 
 	public void Initialize(){
 
@@ -83,11 +88,11 @@ public class AddingPhonestocart extends ExtentReportsClass {
 
 
 	}
-	@AfterTest
+	/*@AfterTest
 	public void closingbrowser(){
 		driver.close();
 
-	}
+	}*/
 
 }
 
