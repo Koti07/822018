@@ -2,69 +2,69 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="211257" started-at="2018-02-15T12:39:17Z" finished-at="2018-02-15T12:42:48Z">
+  <suite name="Suite" duration-ms="239345" started-at="2018-02-16T06:20:51Z" finished-at="2018-02-16T06:24:50Z">
     <groups>
     </groups>
-    <test name="opencartdemo" duration-ms="211257" started-at="2018-02-15T12:39:17Z" finished-at="2018-02-15T12:42:48Z">
+    <test name="opencartdemo" duration-ms="239345" started-at="2018-02-16T06:20:51Z" finished-at="2018-02-16T06:24:50Z">
       <class name="com.opencart.newopencart.OpencartDemo">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="startReport" is-config="true" duration-ms="203" started-at="2018-02-15T18:09:17Z" finished-at="2018-02-15T18:09:17Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="startReport" is-config="true" duration-ms="432" started-at="2018-02-16T11:50:50Z" finished-at="2018-02-16T11:50:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="Initialize()[pri:0, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="Initialize" is-config="true" duration-ms="4936" started-at="2018-02-15T18:09:17Z" finished-at="2018-02-15T18:09:22Z">
+        <test-method status="PASS" signature="Initialize()[pri:0, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="Initialize" is-config="true" duration-ms="25723" started-at="2018-02-16T11:50:51Z" finished-at="2018-02-16T11:51:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialize -->
-        <test-method status="PASS" signature="productcomparison()[pri:49, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="productcomparison" duration-ms="78839" started-at="2018-02-15T18:09:22Z" finished-at="2018-02-15T18:10:41Z">
+        <test-method status="PASS" signature="productcomparison()[pri:49, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="productcomparison" duration-ms="82958" started-at="2018-02-16T11:51:16Z" finished-at="2018-02-16T11:52:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productcomparison -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="getResult" is-config="true" duration-ms="2" started-at="2018-02-15T18:10:41Z" finished-at="2018-02-15T18:10:41Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="getResult" is-config="true" duration-ms="1" started-at="2018-02-16T11:52:39Z" finished-at="2018-02-16T11:52:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=productcomparison status=SUCCESS method=OpencartDemo.productcomparison()[pri:49, instance:com.opencart.newopencart.OpencartDemo@685cb137] output={null}]]]>
+                <![CDATA[[TestResult name=productcomparison status=SUCCESS method=OpencartDemo.productcomparison()[pri:49, instance:com.opencart.newopencart.OpencartDemo@6093dd95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="Orderhistory()[pri:50, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="Orderhistory" duration-ms="54999" started-at="2018-02-15T18:10:41Z" finished-at="2018-02-15T18:11:36Z">
+        <test-method status="PASS" signature="Orderhistory()[pri:50, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="Orderhistory" duration-ms="56464" started-at="2018-02-16T11:52:39Z" finished-at="2018-02-16T11:53:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Orderhistory -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="getResult" is-config="true" duration-ms="1" started-at="2018-02-15T18:11:36Z" finished-at="2018-02-15T18:11:36Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-16T11:53:36Z" finished-at="2018-02-16T11:53:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Orderhistory status=SUCCESS method=OpencartDemo.Orderhistory()[pri:50, instance:com.opencart.newopencart.OpencartDemo@685cb137] output={null}]]]>
+                <![CDATA[[TestResult name=Orderhistory status=SUCCESS method=OpencartDemo.Orderhistory()[pri:50, instance:com.opencart.newopencart.OpencartDemo@6093dd95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="addingPhonestocart()[pri:51, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="addingPhonestocart" duration-ms="72182" started-at="2018-02-15T18:11:36Z" finished-at="2018-02-15T18:12:48Z">
+        <test-method status="PASS" signature="addingPhonestocart()[pri:51, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="addingPhonestocart" duration-ms="73698" started-at="2018-02-16T11:53:36Z" finished-at="2018-02-16T11:54:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingPhonestocart -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-15T18:12:48Z" finished-at="2018-02-15T18:12:48Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="getResult" is-config="true" duration-ms="1" started-at="2018-02-16T11:54:49Z" finished-at="2018-02-16T11:54:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addingPhonestocart status=SUCCESS method=OpencartDemo.addingPhonestocart()[pri:51, instance:com.opencart.newopencart.OpencartDemo@685cb137] output={null}]]]>
+                <![CDATA[[TestResult name=addingPhonestocart status=SUCCESS method=OpencartDemo.addingPhonestocart()[pri:51, instance:com.opencart.newopencart.OpencartDemo@6093dd95] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="closingbrowser()[pri:0, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="closingbrowser" is-config="true" duration-ms="278" started-at="2018-02-15T18:12:48Z" finished-at="2018-02-15T18:12:48Z">
+        <test-method status="PASS" signature="closingbrowser()[pri:0, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="closingbrowser" is-config="true" duration-ms="470" started-at="2018-02-16T11:54:49Z" finished-at="2018-02-16T11:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingbrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.opencart.newopencart.OpencartDemo@685cb137]" name="endReport" is-config="true" duration-ms="203" started-at="2018-02-15T18:12:48Z" finished-at="2018-02-15T18:12:49Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.opencart.newopencart.OpencartDemo@6093dd95]" name="endReport" is-config="true" duration-ms="438" started-at="2018-02-16T11:54:50Z" finished-at="2018-02-16T11:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

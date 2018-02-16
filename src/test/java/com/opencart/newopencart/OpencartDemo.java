@@ -25,7 +25,7 @@ public class OpencartDemo extends ExtentReportsClass {
 
 
 
-	/*@BeforeClass
+	@BeforeClass
 
 	public void Initialize(){
 
@@ -45,10 +45,10 @@ public class OpencartDemo extends ExtentReportsClass {
             e.printStackTrace();
 
         }
-	}*/
+	}
 
 
-	@BeforeClass
+	/*@BeforeClass
 
 	public void Initialize(){
 
@@ -59,7 +59,7 @@ public class OpencartDemo extends ExtentReportsClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://10.207.182.108:81/opencart");
-	}
+	}*/
 
 	@Test(priority='1')
 	public void productcomparison() throws InterruptedException{
